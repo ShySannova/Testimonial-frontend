@@ -7,7 +7,7 @@ const Testimonial = () => {
 
     const getTestimonial=async()=>{
         try{
-          const response = await fetch("http://localhost:5000/testimonials")
+          const response = await fetch("https://testimonial-dstj.onrender.com/testimonials")
           const data = await response.json()
           setTestimonials(data)
         }catch(error){
